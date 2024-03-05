@@ -1,0 +1,48 @@
+# Commands to run on newly created VM instance on Google
+
+# Install Python and pip 
+sudo apt-get update -y
+
+sudo apt-get install python3-distutils
+
+sudo apt-get install python3-apt
+
+sudo apt-get install wget
+
+wget https://bootstrap.pypa.io/get-pip.py
+
+# Cant use sudo python3 get-pip.py according to PEP 668, running pip as root user can result in broken permissions
+# It is recommend to use virtual env instead
+# https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana/75696359#75696359
+
+# Temporary Fix
+sudo python3 get-pip.py --break-system-packages 
+
+
+# Install Pandas
+sudo pip3 install pandas --break-system-packages 
+
+# Install Mage
+sudo pip3 install mage-ai --break-system-packages 
+set GIT_PYTHON_REFRESH=quiet
+
+# Every Run
+export GIT_PYTHON_REFRESH=quiet
+mage start uber-de-project
+
+# Public IP address changes when trying to connect with Mage
+
+# Make sure to enable Firewall port request under Network Interface on google console
+# Get external IP as well
+# Create Firewall Rule on GCP for the VM Instance for particular TCP port
+
+# Couldn't open ioconfig yml file => Delete it => Upload updated one
+
+# Create Data Loader on Mage UI from API  = > the public url from google cloud storage
+# Create Data Transformer on Mage UI and add Python code here
+
+# REMEMEBER TO DELETE Big QUERY, Compute instance, Computer Storage
+
+# Install Google Cloud Library
+sudo pip3 install google-cloud --break-system-packages 
+sudo pip3 install google-cloud-bigquery --break-system-packages 
