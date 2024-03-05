@@ -1,0 +1,11 @@
+    1  git checkout -b dev-feature-1
+    2  git add .
+    4  git commit
+    5  git log
+    6  git push --set-upstream origin dev-feature-1
+    7  git checkout main
+    8  git pull origin main
+    9  git merge dev-feature-1
+   10  git push origin main
+   11  git log
+   12  history > command_history.txt
