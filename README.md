@@ -1,4 +1,7 @@
-# 🚗 NYC Taxi Trips Data Analysis with Google Cloud Platform
+# NYC Taxi Trips Data Analysis with Google Cloud Platform 🚕
+
+<a href="https://lookerstudio.google.com/s/m2NGxVQlv5k"><img src="https://img.shields.io/badge/looker-dashboard-yellow" alt="Website"/></a>
+
 ## 🚀 Introduction
 This project showcases a comprehensive data engineering pipeline using Google Cloud Platform (GCP) for analyzing taxi trips data from New York City. The pipeline includes steps such as data collection, storage setup, ETL processing, database creation, and data visualization.
 
